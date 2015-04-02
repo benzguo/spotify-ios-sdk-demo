@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oSH-fi-BGs">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="sOK-GD-3kZ">
+            <objects>
+                <viewController id="oSH-fi-BGs" customClass="LoginViewController" customModule="Magnify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="37V-th-otU"/>
+                        <viewControllerLayoutGuide type="bottom" id="oyi-F2-34b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ceg-JS-CEb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HvU-RU-dyF">
+                                <rect key="frame" x="16" y="270" width="568" height="60"/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.71372549019999998" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Y13-pV-LvM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="connect Spotify">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="connectButtonAction:" destination="oSH-fi-BGs" eventType="touchUpInside" id="3ac-vd-qdq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="HvU-RU-dyF" secondAttribute="centerY" id="Fp4-8R-Q5V"/>
+                            <constraint firstItem="HvU-RU-dyF" firstAttribute="leading" secondItem="Ceg-JS-CEb" secondAttribute="leadingMargin" id="QBc-C4-RTT"/>
+                            <constraint firstItem="HvU-RU-dyF" firstAttribute="trailing" secondItem="Ceg-JS-CEb" secondAttribute="trailingMargin" id="g9N-K8-2Nw"/>
+                            <constraint firstAttribute="centerX" secondItem="HvU-RU-dyF" secondAttribute="centerX" id="kAF-Nb-f2Q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="connectButton" destination="HvU-RU-dyF" id="ynJ-1O-8Ip"/>
+                        <segue destination="Uys-n1-PQG" kind="presentation" identifier="showPlaylists" id="Oz0-YH-Kbx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="84P-zo-u8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-449" y="310"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fWx-5X-nWC">
+            <objects>
+                <navigationController id="Uys-n1-PQG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eoi-e4-UF9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="scQ-H1-Pp2" kind="relationship" relationship="rootViewController" id="BhM-ZY-Ipy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jnp-9a-YGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="226" y="304"/>
+        </scene>
+        <!--Playlists-->
+        <scene sceneID="ZRM-Sc-HxW">
+            <objects>
+                <viewController title="Playlists" id="scQ-H1-Pp2" customClass="PlaylistViewController" customModule="Magnify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SzZ-TD-c7C"/>
+                        <viewControllerLayoutGuide type="bottom" id="PPR-KK-Ske"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cAx-Gc-YnI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3p4-OI-0vg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3p4-OI-0vg" firstAttribute="top" secondItem="cAx-Gc-YnI" secondAttribute="topMargin" id="Dvv-KT-9Ik"/>
+                            <constraint firstItem="PPR-KK-Ske" firstAttribute="top" secondItem="3p4-OI-0vg" secondAttribute="bottom" id="X6m-Us-v3Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3p4-OI-0vg" secondAttribute="trailing" constant="-16" id="lLX-LR-nbm"/>
+                            <constraint firstItem="3p4-OI-0vg" firstAttribute="leading" secondItem="cAx-Gc-YnI" secondAttribute="leadingMargin" constant="-16" id="zue-ju-lZd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Playlists" id="whv-F5-eYJ"/>
+                    <connections>
+                        <outlet property="tableView" destination="3p4-OI-0vg" id="e2a-5v-kHj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KeL-Ks-lfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="979" y="293"/>
+        </scene>
+    </scenes>
+</document>

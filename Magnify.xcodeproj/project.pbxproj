@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9659E3C91ACC0F5B0040EF74 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9659E3C81ACC0F5B0040EF74 /* AVFoundation.framework */; };
+		9659E3CC1ACC0F810040EF74 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9659E3CB1ACC0F810040EF74 /* Spotify.framework */; };
+		9659E3D21ACC12710040EF74 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9659E3D11ACC12710040EF74 /* LoginViewController.swift */; };
+		9659E3D61ACC129A0040EF74 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9659E3D51ACC129A0040EF74 /* PlaylistViewController.swift */; };
+		96EC7A101ACC0ED90029082F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EC7A0F1ACC0ED90029082F /* AppDelegate.swift */; };
+		96EC7A151ACC0ED90029082F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96EC7A131ACC0ED90029082F /* Main.storyboard */; };
+		96EC7A171ACC0ED90029082F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96EC7A161ACC0ED90029082F /* Images.xcassets */; };
+		96EC7A1A1ACC0ED90029082F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96EC7A181ACC0ED90029082F /* LaunchScreen.xib */; };
+		96EC7A261ACC0ED90029082F /* MagnifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EC7A251ACC0ED90029082F /* MagnifyTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96EC7A201ACC0ED90029082F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96EC7A021ACC0ED90029082F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96EC7A091ACC0ED90029082F;
+			remoteInfo = Magnify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9659E3C81ACC0F5B0040EF74 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9659E3CB1ACC0F810040EF74 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spotify.framework; path = "Carthage/Checkouts/ios-sdk/Spotify.framework"; sourceTree = "<group>"; };
+		9659E3D11ACC12710040EF74 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9659E3D51ACC129A0040EF74 /* PlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		9659E3D71ACC15870040EF74 /* Magnify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Magnify-Bridging-Header.h"; sourceTree = "<group>"; };
+		96EC7A0A1ACC0ED90029082F /* Magnify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magnify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96EC7A0E1ACC0ED90029082F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96EC7A0F1ACC0ED90029082F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96EC7A141ACC0ED90029082F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96EC7A161ACC0ED90029082F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		96EC7A191ACC0ED90029082F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		96EC7A1F1ACC0ED90029082F /* MagnifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagnifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96EC7A241ACC0ED90029082F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96EC7A251ACC0ED90029082F /* MagnifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifyTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96EC7A071ACC0ED90029082F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9659E3C91ACC0F5B0040EF74 /* AVFoundation.framework in Frameworks */,
+				9659E3CC1ACC0F810040EF74 /* Spotify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96EC7A1C1ACC0ED90029082F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9659E3CA1ACC0F680040EF74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9659E3CB1ACC0F810040EF74 /* Spotify.framework */,
+				9659E3C81ACC0F5B0040EF74 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96EC7A011ACC0ED90029082F = {
+			isa = PBXGroup;
+			children = (
+				9659E3CA1ACC0F680040EF74 /* Frameworks */,
+				96EC7A0C1ACC0ED90029082F /* Magnify */,
+				96EC7A221ACC0ED90029082F /* MagnifyTests */,
+				96EC7A0B1ACC0ED90029082F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96EC7A0B1ACC0ED90029082F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96EC7A0A1ACC0ED90029082F /* Magnify.app */,
+				96EC7A1F1ACC0ED90029082F /* MagnifyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96EC7A0C1ACC0ED90029082F /* Magnify */ = {
+			isa = PBXGroup;
+			children = (
+				9659E3D71ACC15870040EF74 /* Magnify-Bridging-Header.h */,
+				96EC7A0F1ACC0ED90029082F /* AppDelegate.swift */,
+				9659E3D11ACC12710040EF74 /* LoginViewController.swift */,
+				9659E3D51ACC129A0040EF74 /* PlaylistViewController.swift */,
+				96EC7A131ACC0ED90029082F /* Main.storyboard */,
+				96EC7A161ACC0ED90029082F /* Images.xcassets */,
+				96EC7A181ACC0ED90029082F /* LaunchScreen.xib */,
+				96EC7A0D1ACC0ED90029082F /* Supporting Files */,
+			);
+			path = Magnify;
+			sourceTree = "<group>";
+		};
+		96EC7A0D1ACC0ED90029082F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96EC7A0E1ACC0ED90029082F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96EC7A221ACC0ED90029082F /* MagnifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				96EC7A251ACC0ED90029082F /* MagnifyTests.swift */,
+				96EC7A231ACC0ED90029082F /* Supporting Files */,
+			);
+			path = MagnifyTests;
+			sourceTree = "<group>";
+		};
+		96EC7A231ACC0ED90029082F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96EC7A241ACC0ED90029082F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96EC7A091ACC0ED90029082F /* Magnify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96EC7A291ACC0ED90029082F /* Build configuration list for PBXNativeTarget "Magnify" */;
+			buildPhases = (
+				96EC7A061ACC0ED90029082F /* Sources */,
+				96EC7A071ACC0ED90029082F /* Frameworks */,
+				96EC7A081ACC0ED90029082F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Magnify;
+			productName = Magnify;
+			productReference = 96EC7A0A1ACC0ED90029082F /* Magnify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96EC7A1E1ACC0ED90029082F /* MagnifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96EC7A2C1ACC0ED90029082F /* Build configuration list for PBXNativeTarget "MagnifyTests" */;
+			buildPhases = (
+				96EC7A1B1ACC0ED90029082F /* Sources */,
+				96EC7A1C1ACC0ED90029082F /* Frameworks */,
+				96EC7A1D1ACC0ED90029082F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96EC7A211ACC0ED90029082F /* PBXTargetDependency */,
+			);
+			name = MagnifyTests;
+			productName = MagnifyTests;
+			productReference = 96EC7A1F1ACC0ED90029082F /* MagnifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96EC7A021ACC0ED90029082F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = benzguo;
+				TargetAttributes = {
+					96EC7A091ACC0ED90029082F = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					96EC7A1E1ACC0ED90029082F = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 96EC7A091ACC0ED90029082F;
+					};
+				};
+			};
+			buildConfigurationList = 96EC7A051ACC0ED90029082F /* Build configuration list for PBXProject "Magnify" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96EC7A011ACC0ED90029082F;
+			productRefGroup = 96EC7A0B1ACC0ED90029082F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96EC7A091ACC0ED90029082F /* Magnify */,
+				96EC7A1E1ACC0ED90029082F /* MagnifyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96EC7A081ACC0ED90029082F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96EC7A151ACC0ED90029082F /* Main.storyboard in Resources */,
+				96EC7A1A1ACC0ED90029082F /* LaunchScreen.xib in Resources */,
+				96EC7A171ACC0ED90029082F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96EC7A1D1ACC0ED90029082F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96EC7A061ACC0ED90029082F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9659E3D21ACC12710040EF74 /* LoginViewController.swift in Sources */,
+				96EC7A101ACC0ED90029082F /* AppDelegate.swift in Sources */,
+				9659E3D61ACC129A0040EF74 /* PlaylistViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96EC7A1B1ACC0ED90029082F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96EC7A261ACC0ED90029082F /* MagnifyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96EC7A211ACC0ED90029082F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96EC7A091ACC0ED90029082F /* Magnify */;
+			targetProxy = 96EC7A201ACC0ED90029082F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96EC7A131ACC0ED90029082F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96EC7A141ACC0ED90029082F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96EC7A181ACC0ED90029082F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96EC7A191ACC0ED90029082F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96EC7A271ACC0ED90029082F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96EC7A281ACC0ED90029082F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96EC7A2A1ACC0ED90029082F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk",
+				);
+				INFOPLIST_FILE = Magnify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Magnify/Magnify-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96EC7A2B1ACC0ED90029082F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk",
+				);
+				INFOPLIST_FILE = Magnify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Magnify/Magnify-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		96EC7A2D1ACC0ED90029082F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MagnifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Magnify.app/Magnify";
+			};
+			name = Debug;
+		};
+		96EC7A2E1ACC0ED90029082F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MagnifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Magnify.app/Magnify";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96EC7A051ACC0ED90029082F /* Build configuration list for PBXProject "Magnify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96EC7A271ACC0ED90029082F /* Debug */,
+				96EC7A281ACC0ED90029082F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96EC7A291ACC0ED90029082F /* Build configuration list for PBXNativeTarget "Magnify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96EC7A2A1ACC0ED90029082F /* Debug */,
+				96EC7A2B1ACC0ED90029082F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96EC7A2C1ACC0ED90029082F /* Build configuration list for PBXNativeTarget "MagnifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96EC7A2D1ACC0ED90029082F /* Debug */,
+				96EC7A2E1ACC0ED90029082F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96EC7A021ACC0ED90029082F /* Project object */;
+}
