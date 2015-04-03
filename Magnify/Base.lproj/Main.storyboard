@@ -68,7 +68,7 @@
         <!--Playlists-->
         <scene sceneID="ZRM-Sc-HxW">
             <objects>
-                <viewController title="Playlists" id="scQ-H1-Pp2" customClass="PlaylistViewController" customModule="Magnify" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Playlists" id="scQ-H1-Pp2" customClass="PlaylistListViewController" customModule="Magnify" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SzZ-TD-c7C"/>
                         <viewControllerLayoutGuide type="bottom" id="PPR-KK-Ske"/>
@@ -85,19 +85,53 @@
                         <color key="backgroundColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="3p4-OI-0vg" firstAttribute="top" secondItem="cAx-Gc-YnI" secondAttribute="topMargin" id="Dvv-KT-9Ik"/>
+                            <constraint firstAttribute="trailing" secondItem="3p4-OI-0vg" secondAttribute="trailing" id="QQA-kr-DP7"/>
+                            <constraint firstItem="3p4-OI-0vg" firstAttribute="leading" secondItem="cAx-Gc-YnI" secondAttribute="leading" id="RVW-dT-Usm"/>
                             <constraint firstItem="PPR-KK-Ske" firstAttribute="top" secondItem="3p4-OI-0vg" secondAttribute="bottom" id="X6m-Us-v3Q"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3p4-OI-0vg" secondAttribute="trailing" constant="-16" id="lLX-LR-nbm"/>
-                            <constraint firstItem="3p4-OI-0vg" firstAttribute="leading" secondItem="cAx-Gc-YnI" secondAttribute="leadingMargin" constant="-16" id="zue-ju-lZd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playlists" id="whv-F5-eYJ"/>
                     <connections>
-                        <outlet property="tableView" destination="3p4-OI-0vg" id="e2a-5v-kHj"/>
+                        <outlet property="tableView" destination="3p4-OI-0vg" id="VcG-Y0-9LD"/>
+                        <segue destination="rk7-R2-QUo" kind="show" identifier="showPlaylist" id="ClS-tw-R1V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KeL-Ks-lfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="979" y="293"/>
+        </scene>
+        <!--Playlist View Controller-->
+        <scene sceneID="gMv-jr-Uag">
+            <objects>
+                <viewController id="rk7-R2-QUo" customClass="PlaylistViewController" customModule="Magnify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JYc-Z6-a4v"/>
+                        <viewControllerLayoutGuide type="bottom" id="l2M-Cu-n3n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xUI-ib-atF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="AQH-d3-90L">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AQH-d3-90L" secondAttribute="trailing" id="1dq-Pf-CR2"/>
+                            <constraint firstItem="AQH-d3-90L" firstAttribute="leading" secondItem="xUI-ib-atF" secondAttribute="leading" id="5Vu-Ov-DKK"/>
+                            <constraint firstItem="AQH-d3-90L" firstAttribute="top" secondItem="xUI-ib-atF" secondAttribute="top" id="CsV-EC-uVb"/>
+                            <constraint firstItem="l2M-Cu-n3n" firstAttribute="top" secondItem="AQH-d3-90L" secondAttribute="bottom" id="Nxx-KT-9Uy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="AQH-d3-90L" id="stT-no-Ee0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3t1-hN-wnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1741" y="304"/>
         </scene>
     </scenes>
 </document>
