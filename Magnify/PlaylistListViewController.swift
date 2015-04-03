@@ -16,11 +16,13 @@ class PlaylistListViewController: UIViewController, UITableViewDataSource, UITab
     var playlists: [SPTPartialPlaylist] = []
 
     override func viewDidLoad() {
+        title = ""
         tableView.registerClass(UITableViewCell.self,
             forCellReuseIdentifier: cellReuseId)
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableFooterView = UIView()
+        tableView.backgroundColor = .tungstenColor()
         loadPlaylists()
     }
 
@@ -29,20 +31,20 @@ class PlaylistListViewController: UIViewController, UITableViewDataSource, UITab
         SPTRequest.playlistsForUserInSession(session,
             callback: { (err, obj) -> Void in
             let list = obj as? SPTPlaylistList
-            list.map { self.parsePlaylistList($0) }
+            list.map { self.parseListPage($0) }
         })
     }
 
-    func parsePlaylistList(list: SPTPlaylistList) {
+    func parseListPage(list: SPTListPage) {
         let items = list.items as [SPTPartialPlaylist]
         playlists = playlists + items
         tableView.reloadData()
+        let session = SPTAuth.defaultInstance().session
         if list.hasNextPage {
-            let session = SPTAuth.defaultInstance().session
             list.requestNextPageWithSession(session,
                 callback: { (err, obj) -> Void in
-                let nextList = obj as? SPTPlaylistList
-                nextList.map { self.parsePlaylistList($0) }
+                let nextList = obj as? SPTListPage
+                nextList.map { self.parseListPage($0) }
             })
         }
     }
@@ -60,6 +62,8 @@ class PlaylistListViewController: UIViewController, UITableViewDataSource, UITab
             forIndexPath: indexPath) as UITableViewCell
         let playlist = playlists[indexPath.row]
         cell.textLabel?.text = playlist.name
+        cell.textLabel?.textColor = .whiteColor()
+        cell.backgroundColor = .tungstenColor()
         return cell
     }
 

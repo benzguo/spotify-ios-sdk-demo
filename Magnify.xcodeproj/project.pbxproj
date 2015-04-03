@@ -11,6 +11,7 @@
 		9659E3CC1ACC0F810040EF74 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9659E3CB1ACC0F810040EF74 /* Spotify.framework */; };
 		9659E3D21ACC12710040EF74 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9659E3D11ACC12710040EF74 /* LoginViewController.swift */; };
 		9659E3D61ACC129A0040EF74 /* PlaylistListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9659E3D51ACC129A0040EF74 /* PlaylistListViewController.swift */; };
+		96D9F8D71ACEC49A00D3273A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9F8D61ACEC49A00D3273A /* UIColorExtension.swift */; };
 		96DFFAD71ACE4BC30053A656 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DFFAD61ACE4BC30053A656 /* PlaylistViewController.swift */; };
 		96EC7A101ACC0ED90029082F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EC7A0F1ACC0ED90029082F /* AppDelegate.swift */; };
 		96EC7A151ACC0ED90029082F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96EC7A131ACC0ED90029082F /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		9659E3D11ACC12710040EF74 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9659E3D51ACC129A0040EF74 /* PlaylistListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistListViewController.swift; sourceTree = "<group>"; };
 		9659E3D71ACC15870040EF74 /* Magnify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Magnify-Bridging-Header.h"; sourceTree = "<group>"; };
+		96D9F8D61ACEC49A00D3273A /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		96DFFAD61ACE4BC30053A656 /* PlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		96EC7A0A1ACC0ED90029082F /* Magnify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magnify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EC7A0E1ACC0ED90029082F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				9659E3D11ACC12710040EF74 /* LoginViewController.swift */,
 				9659E3D51ACC129A0040EF74 /* PlaylistListViewController.swift */,
 				96DFFAD61ACE4BC30053A656 /* PlaylistViewController.swift */,
+				96D9F8D61ACEC49A00D3273A /* UIColorExtension.swift */,
 				96EC7A131ACC0ED90029082F /* Main.storyboard */,
 				96EC7A161ACC0ED90029082F /* Images.xcassets */,
 				96EC7A181ACC0ED90029082F /* LaunchScreen.xib */,
@@ -238,6 +241,7 @@
 			files = (
 				96DFFAD71ACE4BC30053A656 /* PlaylistViewController.swift in Sources */,
 				9659E3D21ACC12710040EF74 /* LoginViewController.swift in Sources */,
+				96D9F8D71ACEC49A00D3273A /* UIColorExtension.swift in Sources */,
 				96EC7A101ACC0ED90029082F /* AppDelegate.swift in Sources */,
 				9659E3D61ACC129A0040EF74 /* PlaylistListViewController.swift in Sources */,
 			);

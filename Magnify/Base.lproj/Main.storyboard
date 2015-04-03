@@ -56,6 +56,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eoi-e4-UF9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.14901961386203766" green="0.14901961386203766" blue="0.14901961386203766" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="scQ-H1-Pp2" kind="relationship" relationship="rootViewController" id="BhM-ZY-Ipy"/>
@@ -90,7 +95,7 @@
                             <constraint firstItem="PPR-KK-Ske" firstAttribute="top" secondItem="3p4-OI-0vg" secondAttribute="bottom" id="X6m-Us-v3Q"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Playlists" id="whv-F5-eYJ"/>
+                    <navigationItem key="navigationItem" id="whv-F5-eYJ"/>
                     <connections>
                         <outlet property="tableView" destination="3p4-OI-0vg" id="VcG-Y0-9LD"/>
                         <segue destination="rk7-R2-QUo" kind="show" identifier="showPlaylist" id="ClS-tw-R1V"/>
@@ -112,21 +117,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="AQH-d3-90L">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="James Holden" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jxw-xO-qQm">
+                                <rect key="frame" x="16" y="90" width="568" height="23"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rannoch Dawn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNe-De-jAf">
+                                <rect key="frame" x="16" y="121" width="568" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="xEC-kf-DdD">
+                                <rect key="frame" x="0.0" y="64" width="600" height="2.5"/>
+                                <color key="progressTintColor" red="0.1411764771" green="0.71372550729999995" blue="0.26274511220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" red="0.14901961386203766" green="0.14901961386203766" blue="0.14901961386203766" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQi-pu-I1U">
+                                <rect key="frame" x="282" y="172" width="36" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="▸▸">
+                                    <color key="titleColor" red="0.14117647707462311" green="0.7137255072593689" blue="0.26274511218070984" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonAction:" destination="rk7-R2-QUo" eventType="touchUpInside" id="Yz3-iV-G9y"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.14901961386203766" green="0.14901961386203766" blue="0.14901961386203766" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="AQH-d3-90L" secondAttribute="trailing" id="1dq-Pf-CR2"/>
-                            <constraint firstItem="AQH-d3-90L" firstAttribute="leading" secondItem="xUI-ib-atF" secondAttribute="leading" id="5Vu-Ov-DKK"/>
-                            <constraint firstItem="AQH-d3-90L" firstAttribute="top" secondItem="xUI-ib-atF" secondAttribute="top" id="CsV-EC-uVb"/>
-                            <constraint firstItem="l2M-Cu-n3n" firstAttribute="top" secondItem="AQH-d3-90L" secondAttribute="bottom" id="Nxx-KT-9Uy"/>
+                            <constraint firstItem="RQi-pu-I1U" firstAttribute="top" secondItem="BNe-De-jAf" secondAttribute="bottom" constant="28" id="Ehz-aK-9Ut"/>
+                            <constraint firstItem="BNe-De-jAf" firstAttribute="top" secondItem="Jxw-xO-qQm" secondAttribute="bottom" constant="8" id="G05-vh-G4w"/>
+                            <constraint firstItem="BNe-De-jAf" firstAttribute="top" secondItem="Jxw-xO-qQm" secondAttribute="bottom" constant="8" id="Kmj-7c-Kcw"/>
+                            <constraint firstItem="Jxw-xO-qQm" firstAttribute="leading" secondItem="xUI-ib-atF" secondAttribute="leadingMargin" id="LUi-aC-oca"/>
+                            <constraint firstItem="BNe-De-jAf" firstAttribute="trailing" secondItem="xUI-ib-atF" secondAttribute="trailingMargin" id="ML1-7q-0Ku"/>
+                            <constraint firstAttribute="trailing" secondItem="xEC-kf-DdD" secondAttribute="trailing" id="MrL-qt-fIt"/>
+                            <constraint firstItem="BNe-De-jAf" firstAttribute="leading" secondItem="xUI-ib-atF" secondAttribute="leadingMargin" id="Va2-mP-pvg"/>
+                            <constraint firstItem="xEC-kf-DdD" firstAttribute="leading" secondItem="xUI-ib-atF" secondAttribute="leading" id="YUF-Jr-daa"/>
+                            <constraint firstItem="Jxw-xO-qQm" firstAttribute="trailing" secondItem="xUI-ib-atF" secondAttribute="trailingMargin" id="ef2-cS-Y5M"/>
+                            <constraint firstItem="xEC-kf-DdD" firstAttribute="top" secondItem="JYc-Z6-a4v" secondAttribute="bottom" id="fPq-bi-tuv"/>
+                            <constraint firstAttribute="centerX" secondItem="RQi-pu-I1U" secondAttribute="centerX" id="jmi-ox-CC3"/>
+                            <constraint firstItem="Jxw-xO-qQm" firstAttribute="top" secondItem="JYc-Z6-a4v" secondAttribute="bottom" constant="26" id="tzA-ad-CMl"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="AQH-d3-90L" id="stT-no-Ee0"/>
+                        <outlet property="artistLabel" destination="Jxw-xO-qQm" id="I80-lv-xdy"/>
+                        <outlet property="nextButton" destination="RQi-pu-I1U" id="gea-o0-nAN"/>
+                        <outlet property="progressView" destination="xEC-kf-DdD" id="t2y-3g-2Es"/>
+                        <outlet property="trackLabel" destination="BNe-De-jAf" id="BQA-33-SgV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3t1-hN-wnL" userLabel="First Responder" sceneMemberID="firstResponder"/>

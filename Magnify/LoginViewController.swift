@@ -30,7 +30,6 @@ class LoginViewController: UIViewController, SPTAuthViewDelegate {
         authVC.delegate = self
         authVC.modalPresentationStyle = .OverCurrentContext
         authVC.modalTransitionStyle = .CrossDissolve
-        authVC.clearCookies(nil)
         modalPresentationStyle = .CurrentContext
         definesPresentationContext = true;
         presentViewController(authVC, animated: true, completion: nil)
